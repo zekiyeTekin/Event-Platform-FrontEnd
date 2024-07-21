@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tasarim oluşturma </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        <link rel="preconnect" href="https://fonts.googleapis.com" >
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+       
+    </head>
+
+    <body id="body-login-register">
+
+       
+      
+        <div class="main" id="main">
+
+          
+
+            <header class="header" id="header" >
+                <a href="#" class="logo" id="logo">
+                    <img src="images/logo.png" alt="">
+                    
+                  </a>
+                <nav class="navigation">
+                    <a href="#">Anasayfa</a>
+                    <a href="#allMember">Topluluklar</a>
+                    <a href="#allMemberEvent">Etkinlikler</a>
+                    <a href="#about">Hakkımızda</a>
+                    <a href="#contact">İletişim</a>
+                    <button class="btnLogin">Login</button>
+                   
+                </nav>
+            </header>
+
+            <div id="bodyGorsel">
+                <img src="images/bb (8).jpg" alt=""> 
+           </div>
+
+            <div class="wrapper">
+                
+        
+                <span class="icon-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-login-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" required="true" id="login-email">
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-login-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="text" required="true" id="login-password">
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <a href="#">Forgot Password</a>
+                        </div>
+                        <button type="submit" class="btn-login" id="login-btn">Login</button>
+
+                        <div class="login-register">
+                            <p>Don't have an account?
+                                <a href="#" class="register-link">Register</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div class="form-box register">
+                    <h2>Register</h2>
+                    <form action="#">
+
+                        <div class="input-login-box">
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+                            <input type="text" required="true" id="username">
+                            <label>Username</label>
+                        </div>
+
+                        <div class="input-login-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" required="true" id="email">
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-login-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" required="true" id="password">
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remember-forgot">
+                            <label> 
+                                <input type="checkbox">
+                                I agree to the terms & conditions
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-login" id="register-btn">Register</button>
+
+                        <div class="login-register">
+                            <p>Already have an account?
+                                <a href="#" class="login-link">Login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="main-section">
+
+                <section id="allMember">
+                    <div class="container">
+                    <div class="heading">Topluluklarımızı <span>Keşfedin</span></div>
+                
+                    <div class="row">
+                         <div class="rowBox">
+                            <div class="boxDetails"><span id="boxDetailsSpan1" ></span></div>
+                            <img id="imgCommunty" alt="">
+        
+                            <form action="" method="post">    
+                                <div class="memberCount"><p id="memberCountForCommunity1"></p></div>                       
+                                <button type="submit" class="addCart-btn">Katıl</button>
+                            </form>
+                        </div>
+
+                        <div class="rowBox">
+                           <div class="boxDetails"><span id="boxDetailsSpan2"></span></div>
+                           <img id="imgCommunty" src="" alt="">
+       
+                           <form action="" method="post">    
+                               <div class="memberCount"><p id="memberCountForCommunity2" ></p></div>                       
+                               <button type="submit" class="addCart-btn">Katıl</button>
+                           </form>
+                       </div>
+
+                       <div class="rowBox">
+                        <div class="boxDetails"><span id="boxDetailsSpan3"></span></div>
+                        <img id="imgCommunty" src="" alt="">
+    
+                        <form action="" method="post">    
+                            <div class="memberCount"><p id="memberCountForCommunity3"></p></div>                       
+                            <button type="submit" class="addCart-btn">Katıl</button>
+                        </form>
+                        </div>
+                    </div>               
+                    </div>
+                </section>
+
+
+                <section id="allMemberEvent">
+                    <div class="container">
+                    <div class="heading"><span>Aktif </span>Etkinlikler</div>
+                
+                    <div class="row">
+                         <div class="rowBox">
+                            <div class="boxDetails"><span id="boxDetailsSpanForEvent1"></span></div>
+                            <img id="imgEvent1" alt="">
+        
+                            <form action="" method="post">    
+                                <div class="memberCount"><p id="memberCountForEvent1"></p></div>                       
+                                <button type="submit" class="addCart-btn">Katıl</button>
+                            </form>
+                        </div>
+
+                        <div class="rowBox">
+                           <div class="boxDetails"><span id="boxDetailsSpanForEvent2"></span></div>
+                           <img id="imgEvent2" src="" alt="">
+       
+                           <form action="" method="post">    
+                               <div class="memberCount"><p id="memberCountForEvent2"></p></div>                       
+                               <button type="submit" class="addCart-btn">Katıl</button>
+                           </form>
+                       </div>
+
+                       <div class="rowBox">
+                        <div class="boxDetails"><span id="boxDetailsSpanForEvent3"></span></div>
+                        <img id="imgEvent3" alt="">
+    
+                        <form action="" method="post">    
+                            <div class="memberCount"><p id="memberCountForEvent3"></p></div>                       
+                            <button type="submit" class="addCart-btn">Katıl</button>
+                        </form>
+                        </div>
+                    </div>      
+                    </div>
+                </section>
+
+
+                <section id="about">
+                    <div class="container">
+                    <div class="heading">Biz <span>Kimiz</span></div>
+                    <div class="row">                    
+                        <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/bb (8).jpg" alt="">
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <h3>Event Platform</h3>
+                        <p>
+                            <strong>Amaç: </strong>Kullanıcılarımızın  bilgi ve
+                            deneyimlerini paylaşmaya teşvik ederek öğrenme ve
+                            gelişme fırsatları sunan, etkinlik katılımını
+                            arttırmayı ve topluluk ortamı oluşturmayı yeni bir
+                            seviyeye taşımayı hedefliyoruz.<br><br>Sizlerin ortak ilgi
+                            alanlarına sahip kişilerle bağlantı kurmasına ve 
+                            güçlü topluluklar oluşturmasına yardımcı olmaktan mutluluk
+                            duyuyoruz.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+
+
+                <section id="contact">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-7">
+                        <form action="https://api.web3forms.com/submit" method="POST"> 
+                        
+                            <div class="heading6">Bize <span>Ulaşın</span></div>
+                            <p>Öneri ve sorularınız için iletişim kurunuz.</p>
+                            <input type="hidden" name="access_key" value="b5ee3e03-2672-4a9b-9ac9-6b6a60cc106b">
+                            <input type="text" name="name" class="form-control" placeholder="Ad Soyad" aria-label="default input example" required><br>
+                            <input type="email" name="email" class="form-control" placeholder="Mail" aria-label="default input example" required><br>
+                            <textarea type="message" name="message"class="form-control" placeholder="Mesaj" aria-label="default input example" required></textarea><br>
+                            <button type="submit" id="btn-contact" alt="">Mesaj Gönder</button>
+                      </form>  
+                    </div>
+                    
+
+                        <div class="col-md-5" id="col">
+                        <h1>Bilgi</h1>
+                        <p><i class="fa fa-user"></i>Zekiye Tekin</p>
+                        <p><i class="fa-regular fa-envelope"></i>zekiyetekin08@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+90 (000) 000 00 00</p>
+                        <p><i class="fa fa-exclamation"></i>
+                            Sitemizde herhangi bir sorun yaşıyorsanız
+                            verilen iletişim adresine eposta
+                            gönderebilirsiniz.
+                        </p>
+                        </div>
+                    </div>
+                    </div> 
+                </section>
+
+
+
+
+            </div>
+
+
+
+
+           
+            
+
+
+
+
+
+
+
+        </div>
+        
+    
+    <script src="pages\LoginPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
